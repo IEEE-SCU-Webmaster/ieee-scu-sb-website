@@ -28,7 +28,7 @@ export default function HeroSection() {
   return (
     <header className="relative flex min-h-svh flex-col justify-between overflow-hidden p-8 md:p-12 lg:justify-around">
       <nav className="relative z-10 mx-auto mt-8 hidden w-full max-w-6xl items-center justify-evenly gap-4 backdrop-blur-[2px] lg:flex">
-        <CustomLink href={"/"}>Home</CustomLink>
+        {/* <CustomLink href={"/"}>Home</CustomLink> */}
         <CustomLink href="/events">
           {upcomingEvents && upcomingEvents.length != 0 && (
             <BellAlertIcon className="bell absolute top-[2px] -left-6 inline-block size-5 text-red-600 dark:text-red-500" />
@@ -36,6 +36,7 @@ export default function HeroSection() {
           Events
         </CustomLink>
         <CustomLink href="/about">About Us</CustomLink>
+                <CustomLink href="/membership">Membership</CustomLink>
         <Image
           src={logoShape}
           alt="Logo"
@@ -54,6 +55,7 @@ export default function HeroSection() {
         />
         <CustomLink href="/committees">Committees</CustomLink>
         <CustomLink href="/join">Join Us</CustomLink>
+
         <CustomLink href="/contact">Contact Us</CustomLink>
       </nav>
 

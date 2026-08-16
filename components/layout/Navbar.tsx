@@ -150,6 +150,9 @@ export default function Navbar() {
           <CustomLink href="/contact" setIsOpen={setIsOpen}>
             Contact Us
           </CustomLink>
+          <CustomLink href="/membership" setIsOpen={setIsOpen}>
+            Membership
+          </CustomLink>
           <hr className="mt-2 mb-4 lg:hidden" />
           <div className="relative lg:my-auto">
             <span className="border-border absolute -left-1/2 hidden h-6 translate-y-[25%] border lg:block"></span>
